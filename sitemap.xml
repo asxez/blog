@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://asxez.github.io/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/</loc>
+    
+    <lastmod>2023-03-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asxez.github.io/2023/03/06/%E7%BA%A2%E4%BA%BA%E7%82%B9%E9%9B%86js%E9%80%86%E5%90%91%E7%88%AC%E8%99%AB/</loc>
+    
+    <lastmod>2023-03-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://asxez.github.io/about/index.html</loc>
     
     <lastmod>2023-03-11</lastmod>
@@ -37,19 +55,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://asxez.github.io/2023/03/06/%E7%BA%A2%E4%BA%BA%E7%82%B9%E9%9B%86js%E9%80%86%E5%90%91%E7%88%AC%E8%99%AB/</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://asxez.github.io/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,7 +66,14 @@
   
   <url>
     <loc>https://asxez.github.io/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://asxez.github.io/tags/js%E9%80%86%E5%90%91/</loc>
+    <lastmod>2023-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
