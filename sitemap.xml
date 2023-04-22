@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://asxe.vip/README.html</loc>
-    
-    <lastmod>2023-04-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://asxe.vip/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     
     <lastmod>2023-04-12</lastmod>
@@ -133,20 +124,6 @@
   </url>
   
   <url>
-    <loc>https://asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2023-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
-    <lastmod>2023-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2023-04-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -161,6 +138,13 @@
   </url>
   
   <url>
+    <loc>https://asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2023-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asxe.vip/tags/%E4%BA%8C%E6%AC%A1%E5%85%83/</loc>
     <lastmod>2023-04-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -169,6 +153,13 @@
   
   <url>
     <loc>https://asxe.vip/tags/API/</loc>
+    <lastmod>2023-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
     <lastmod>2023-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
