@@ -29,12 +29,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-
-<link rel="canonical" href="https://asxe.vip/links/">
-
+  <meta name="keywords" content="GitHub,避坑" />
 
 
-  <title>本功能尚处开发中！ |
+<link rel="canonical" href="https://asxe.vip/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/">
+
+
+
+  <title>
+GitHub页面自定义域名（参考于官方文档） |
 ASXE = 月落星沉</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -62,8 +65,34 @@ ASXE = 月落星沉</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">本功能尚处开发中！
+  <h1 itemprop="name headline">GitHub页面自定义域名（参考于官方文档）
   </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-04-22 22:13:13">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-04-22T22:13:13+08:00">2023-04-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>898</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
 
           </div>
         </div>
@@ -93,12 +122,12 @@ ASXE = 月落星沉</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?322422"></li>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?650505"></li>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?187832"></li>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?23497"></li>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?616259"></li>
-          <li class="item" data-background-image="https://api.lovezyc.club/random.php?362723"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?943367"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?484997"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?319896"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?887700"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?94746"></li>
+          <li class="item" data-background-image="https://api.lovezyc.club/random.php?394932"></li>
         </ul>
       </div>
     </header>
@@ -119,9 +148,15 @@ ASXE = 月落星沉</title>
       <div class="inner">
         <div id="main" class="pjax">
           
-  <div class="page wrap">
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://asxe.vip/links/index.html">
+  <link itemprop="mainEntityOfPage" href="https://asxe.vip/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -136,14 +171,71 @@ ASXE = 月落星沉</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p><span class="rainbow">本站目前正在申请加入十年之约，一旦加入成功，本功能便可使用</span></p>
+    <h1 id="开头"><a class="anchor" href="#开头">#</a> 开头</h1>
+<p>我为什么发这篇文章？因为今天采购了新的域名，并准备给博客换上新的” 名字 “，在配置过程中遇到的一些问题和坑，在此提出，说不定以后会有人用着呢。</p>
+<p>注意本页底部的避坑一栏！</p>
+<p>若是仍有不懂的地方，可以在评论区留言哦！</p>
+<h1 id="开始"><a class="anchor" href="#开始">#</a> 开始</h1>
+<p><span class="label danger">注意：以下配置方法选择其一即可！！！</span></p>
+<h2 id="配置子域名"><a class="anchor" href="#配置子域名">#</a> 配置子域名</h2>
+<p>配置过程中，最重要的就是 DNS 解析，配置子域名很简单，如下</p>
+<ol>
+<li>记录类型选择 CNAME，记录值就是你的原域名，即<span class="label info"> &lt;user&gt;.github.io</span>，请注意，我建议你将博客仓库的仓库名设为与你的用户名相同</li>
+<li>主机记录最好为<span class="label info"> www</span> 或者<span class="label info"> blog</span>，因为官方文档上给的就是这两个！</li>
+</ol>
+<h2 id="配置apex域名"><a class="anchor" href="#配置apex域名">#</a> 配置 apex 域名</h2>
+<p><span class="label danger">下面两种解析方法任选其一即可</span></p>
+<ol>
+<li>记录类型选择 A 类型，记录值则有四个，如下</li>
+</ol>
+<pre><code>185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+</code></pre>
+<p>即你需要解析四个 A 记录<br />
+ 2. 你也可以选择 AAAA 记录，即 IPv6，但是这种方法的速度很慢！记录值也是四个，如下</p>
+<pre><code>2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+</code></pre>
+<h2 id="配置apex域和www子域变体"><a class="anchor" href="#配置apex域和www子域变体">#</a> 配置 apex 域和 www 子域变体</h2>
+<p>这个就很简单了，就是将上面两种配置都解析上，但是子域名解析的主机记录必须为 www</p>
+<h1 id="最后"><a class="anchor" href="#最后">#</a> 最后</h1>
+<p>选择以上任意一种解析后，即可到 GitHub 进行设置</p>
+<ol>
+<li>打开你的博客仓库并进入设置</li>
+<li>点击到 pages，即页面</li>
+<li>将你的域名输入其中，然后保存即可</li>
+</ol>
+<h1 id="避坑"><a class="anchor" href="#避坑">#</a> 避坑！</h1>
+<ol>
+<li>当你在保存域名时，很有可能会报【asxe.vip 及其备用名称配置不正确<br />
+域不会解析到 GitHub 页面服务器。有关详细信息，请参阅文档 （NotServedByPagesError）。】<br />
+其实这个并不会影响访问你的博客，可以忽略</li>
+<li>若你解析了 CNAME 类型，就需要在仓库里添加一个文件，名称为 CNAME，<span class="label danger">注意必须是全部大写</span>，里面写你的域名即可</li>
+<li>基于 hexo 搭建的博客，当你推送时可能会删掉仓库原所有文件，即包括了<span class="label info"> CNAME 文件</span>，那么你可以将此文件放在你博客文件夹根目录的 source 文件夹里面，这样你每次提交的时候就会带上这个文件一起提交在仓库了，如下<br />
+<img data-src="https://gitee.com/asxe/image/raw/master/other/1.png" alt="1.png" /></li>
+</ol>
 
+      <div class="tags">
+          <a href="/tags/GitHub/" rel="tag"><i class="ic i-tag"></i> GitHub</a>
+          <a href="/tags/%E9%81%BF%E5%9D%91/" rel="tag"><i class="ic i-tag"></i> 避坑</a>
+      </div>
   </div>
 
    <footer>
 
     <div class="meta">
-  <span id="links/" class="item leancloud_visitors" data-flag-title="本功能尚处开发中！" title="阅读次数">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-04-22 22:54:21" itemprop="dateModified" datetime="2023-04-22T22:54:21+08:00">2023-04-22</time>
+  </span>
+  <span id="2023/04/22/GitHub页面自定义域名（参考于官方文档）/" class="item leancloud_visitors" data-flag-title="GitHub页面自定义域名（参考于官方文档）" title="阅读次数">
       <span class="icon">
         <i class="ic i-eye"></i>
       </span>
@@ -185,7 +277,7 @@ ASXE = 月落星沉</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://asxe.vip/links/index.html" title="本功能尚处开发中！">https://asxe.vip/links/index.html</a>
+    <a href="https://asxe.vip/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/" title="GitHub页面自定义域名（参考于官方文档）">https://asxe.vip/2023/04/22/GitHub页面自定义域名（参考于官方文档）/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -199,6 +291,23 @@ ASXE = 月落星沉</title>
 
   </div>
   
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/04/21/%E9%9A%8F%E6%9C%BA%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87API/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.lovezyc.club&#x2F;random.php?126961" title="随机二次元图片API">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>随机二次元图片API</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
   <div class="wrap" id="comments"></div>
 
 
@@ -211,6 +320,7 @@ ASXE = 月落星沉</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A4%B4"><span class="toc-number">1.</span> <span class="toc-text"> 开头</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B"><span class="toc-number">2.</span> <span class="toc-text"> 开始</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%AD%90%E5%9F%9F%E5%90%8D"><span class="toc-number">2.1.</span> <span class="toc-text"> 配置子域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEapex%E5%9F%9F%E5%90%8D"><span class="toc-number">2.2.</span> <span class="toc-text"> 配置 apex 域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEapex%E5%9F%9F%E5%92%8Cwww%E5%AD%90%E5%9F%9F%E5%8F%98%E4%BD%93"><span class="toc-number">2.3.</span> <span class="toc-text"> 配置 apex 域和 www 子域变体</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">3.</span> <span class="toc-text"> 最后</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%81%BF%E5%9D%91"><span class="toc-number">4.</span> <span class="toc-text"> 避坑！</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -323,24 +433,6 @@ ASXE = 月落星沉</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="基于mirai和graia的QQ机器人">基于mirai和graia的QQ机器人</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/" title="新版有道翻译之js逆向">新版有道翻译之js逆向</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2023/03/06/%E7%BA%A2%E4%BA%BA%E7%82%B9%E9%9B%86js%E9%80%86%E5%90%91%E7%88%AC%E8%99%AB/" title="红人点集js逆向爬虫">红人点集js逆向爬虫</a></span>
   </li>
 
@@ -359,16 +451,7 @@ ASXE = 月落星沉</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/03/28/%E7%88%AC%E8%99%AB%E4%B9%8Bhttpx%E5%BA%93/" title="HTTP2.0之httpx">HTTP2.0之httpx</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/04/21/%E9%9A%8F%E6%9C%BA%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87API/" title="随机二次元图片API">随机二次元图片API</a></span>
   </li>
 
       
@@ -386,7 +469,34 @@ ASXE = 月落星沉</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/04/21/%E9%9A%8F%E6%9C%BA%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87API/" title="随机二次元图片API">随机二次元图片API</a></span>
+    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="基于mirai和graia的QQ机器人">基于mirai和graia的QQ机器人</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/03/28/%E7%88%AC%E8%99%AB%E4%B9%8Bhttpx%E5%BA%93/" title="HTTP2.0之httpx">HTTP2.0之httpx</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/" title="新版有道翻译之js逆向">新版有道翻译之js逆向</a></span>
   </li>
 
   </ul>
@@ -429,7 +539,7 @@ ASXE = 月落星沉</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'links/',
+    path: '2023/04/22/GitHub页面自定义域名（参考于官方文档）/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"
