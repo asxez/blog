@@ -117,20 +117,6 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/tags/GitHub/</loc>
-    <lastmod>2023-04-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/%E9%81%BF%E5%9D%91/</loc>
-    <lastmod>2023-04-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
     <lastmod>2023-04-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -146,6 +132,20 @@
   
   <url>
     <loc>https://www.asxe.vip/tags/python/</loc>
+    <lastmod>2023-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/tags/GitHub/</loc>
+    <lastmod>2023-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/tags/%E9%81%BF%E5%9D%91/</loc>
     <lastmod>2023-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
