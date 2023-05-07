@@ -93,7 +93,7 @@ ASXE = 月落星沉</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>5.7k</span>
+    <span>6.3k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -101,7 +101,7 @@ ASXE = 月落星沉</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>5 分钟</span>
+    <span>6 分钟</span>
   </span>
 </div>
 
@@ -134,12 +134,12 @@ ASXE = 月落星沉</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?294574"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?698302"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?438237"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?952580"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?725338"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?702591"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?3800"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?500495"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?865826"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?75835"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?126170"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?868020"></li>
         </ul>
       </div>
     </header>
@@ -215,7 +215,12 @@ ASXE = 月落星沉</title>
 <p>将图片等比例缩小或者放大</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>equal_scale_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">#最后一个参数是变化倍数</span></pre></td></tr></table></figure><h3 id="customize_image"><a class="anchor" href="#customize_image">#</a> customize_image()</h3>
 <p>自定义修改图片分辨率，若是不输入第三和四个参数，那么将会使用原参数</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr模块"><a class="anchor" href="#aocr模块">#</a> Aocr 模块</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="get_image_hash"><a class="anchor" href="#get_image_hash">#</a> get_image_hash()</h3>
+<p>获取图片的哈希值，返回值由 0 和 1 组成</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>get_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/.png'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images"><a class="anchor" href="#remove_same_images">#</a> remove_same_images()</h3>
+<p>删除某目录下相同的图片且每张图片保留一张。<br />
+具体实现：通过计算图片的哈希值，相同图片则会被删除。</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>remove_same_images<span class="token punctuation">(</span><span class="token string">'F:/image'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr模块"><a class="anchor" href="#aocr模块">#</a> Aocr 模块</h2>
 <p>使用本模块请前往<span class="exturl" data-url="aHR0cHM6Ly90ZXNzZXJhY3Qtb2NyLmdpdGh1Yi5pby90ZXNzZG9jL0luc3RhbGxhdGlvbi5odG1s">点击这里</span>下载 OCR 引擎</p>
 <h3 id="image_to_text"><a class="anchor" href="#image_to_text">#</a> image_to_text()</h3>
 <p>识别图像中的文本，参数 filePath：图片路径，lang：图片里的语言，默认中文，可以多语言，例：'chi_sim+eng',timeout: 识别超时时间，默认 0，即无</p>
@@ -261,7 +266,12 @@ ASXE = 月落星沉</title>
 <p>Reduce or enlarge the image at equal scale.</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>equal_scale_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">#The last parameter is the multiplier.</span></pre></td></tr></table></figure><h3 id="customize_image-2"><a class="anchor" href="#customize_image-2">#</a> customize_image()</h3>
 <p>Customize the image resolution, if you do not enter the third and fourth parameters, the original parameters will be used.</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr-module"><a class="anchor" href="#aocr-module">#</a> Aocr module</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="get_image_hash-2"><a class="anchor" href="#get_image_hash-2">#</a> get_image_hash()</h3>
+<p>Get the hash value of the image, and the return value consists of 0 and 1.</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>get_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/.png'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images-2"><a class="anchor" href="#remove_same_images-2">#</a> remove_same_images()</h3>
+<p>Delete the same images in a directory and keep one image per image.<br />
+Implementation: By calculating the hash value of the image, the same image will be deleted.</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>remove_same_images<span class="token punctuation">(</span><span class="token string">'F:/image'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr-module"><a class="anchor" href="#aocr-module">#</a> Aocr module</h2>
 <p>To use this module, go to [click here] (<span class="exturl" data-url="aHR0cHM6Ly90ZXNzZXJhY3Qtb2NyLmdpdGh1Yi5pby90ZXNzZG9jL0luc3RhbGxhdGlvbi5odG1s">https://tesseract-ocr.github.io/tessdoc/Installation.html</span>) to download the OCR engine.</p>
 <h3 id="image_to_text-2"><a class="anchor" href="#image_to_text-2">#</a> image_to_text()</h3>
 <p>Identify text in an image, parameters filePath: image path, lang: language in the image, default Chinese, can be multilingual, for example: 'chi_sim+eng', timeout: recognition timeout, default 0, that is, none.</p>
@@ -295,7 +305,7 @@ ASXE = 月落星沉</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-05-06 18:58:34" itemprop="dateModified" datetime="2023-05-06T18:58:34+08:00">2023-05-06</time>
+    <time title="修改时间：2023-05-07 09:56:38" itemprop="dateModified" datetime="2023-05-07T09:56:38+08:00">2023-05-07</time>
   </span>
   <span id="2023/05/05/ImageMagic的API文档(中英文版)/" class="item leancloud_visitors" data-flag-title="ImageMagic库API文档(中英文版)" title="阅读次数">
       <span class="icon">
@@ -358,7 +368,7 @@ ASXE = 月落星沉</title>
     <div class="item left">
       
 
-  <a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.asxe.vip&#x2F;scenery.php?170114" title="爬取铜钟歌单音乐">
+  <a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.asxe.vip&#x2F;scenery.php?354926" title="爬取铜钟歌单音乐">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 爬虫</span>
   <h3>爬取铜钟歌单音乐</h3>
@@ -382,7 +392,7 @@ ASXE = 月落星沉</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E"><span class="toc-number">1.</span> <span class="toc-text"> 欢迎！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96imagemagic"><span class="toc-number">2.</span> <span class="toc-text"> 获取 ImageMagic</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs"><span class="toc-number">3.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image%E6%A8%A1%E5%9D%97"><span class="toc-number">3.1.</span> <span class="toc-text"> Image 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image"><span class="toc-number">3.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word"><span class="toc-number">3.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image"><span class="toc-number">3.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image"><span class="toc-number">3.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert"><span class="toc-number">3.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image"><span class="toc-number">3.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image"><span class="toc-number">3.1.7.</span> <span class="toc-text"> customize_image()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr%E6%A8%A1%E5%9D%97"><span class="toc-number">3.2.</span> <span class="toc-text"> Aocr 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text"><span class="toc-number">3.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf"><span class="toc-number">3.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr"><span class="toc-number">3.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml"><span class="toc-number">3.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data"><span class="toc-number">3.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd"><span class="toc-number">3.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs"><span class="toc-number">3.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages"><span class="toc-number">3.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#welcome-to-you"><span class="toc-number">4.</span> <span class="toc-text"> Welcome to you !</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#where-to-get-it"><span class="toc-number">5.</span> <span class="toc-text"> Where to get it ?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs-2"><span class="toc-number">6.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image-module"><span class="toc-number">6.1.</span> <span class="toc-text"> Image module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image-2"><span class="toc-number">6.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word-2"><span class="toc-number">6.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image-2"><span class="toc-number">6.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image-2"><span class="toc-number">6.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert-2"><span class="toc-number">6.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image-2"><span class="toc-number">6.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image-2"><span class="toc-number">6.1.7.</span> <span class="toc-text"> customize_image()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr-module"><span class="toc-number">6.2.</span> <span class="toc-text"> Aocr module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text-2"><span class="toc-number">6.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf-2"><span class="toc-number">6.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr-2"><span class="toc-number">6.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml-2"><span class="toc-number">6.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data-2"><span class="toc-number">6.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd-2"><span class="toc-number">6.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs-2"><span class="toc-number">6.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages-2"><span class="toc-number">6.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E"><span class="toc-number">1.</span> <span class="toc-text"> 欢迎！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96imagemagic"><span class="toc-number">2.</span> <span class="toc-text"> 获取 ImageMagic</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs"><span class="toc-number">3.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image%E6%A8%A1%E5%9D%97"><span class="toc-number">3.1.</span> <span class="toc-text"> Image 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image"><span class="toc-number">3.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word"><span class="toc-number">3.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image"><span class="toc-number">3.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image"><span class="toc-number">3.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert"><span class="toc-number">3.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image"><span class="toc-number">3.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image"><span class="toc-number">3.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_hash"><span class="toc-number">3.1.8.</span> <span class="toc-text"> get_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images"><span class="toc-number">3.1.9.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr%E6%A8%A1%E5%9D%97"><span class="toc-number">3.2.</span> <span class="toc-text"> Aocr 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text"><span class="toc-number">3.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf"><span class="toc-number">3.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr"><span class="toc-number">3.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml"><span class="toc-number">3.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data"><span class="toc-number">3.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd"><span class="toc-number">3.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs"><span class="toc-number">3.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages"><span class="toc-number">3.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#welcome-to-you"><span class="toc-number">4.</span> <span class="toc-text"> Welcome to you !</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#where-to-get-it"><span class="toc-number">5.</span> <span class="toc-text"> Where to get it ?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs-2"><span class="toc-number">6.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image-module"><span class="toc-number">6.1.</span> <span class="toc-text"> Image module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image-2"><span class="toc-number">6.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word-2"><span class="toc-number">6.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image-2"><span class="toc-number">6.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image-2"><span class="toc-number">6.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert-2"><span class="toc-number">6.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image-2"><span class="toc-number">6.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image-2"><span class="toc-number">6.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_hash-2"><span class="toc-number">6.1.8.</span> <span class="toc-text"> get_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images-2"><span class="toc-number">6.1.9.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr-module"><span class="toc-number">6.2.</span> <span class="toc-text"> Aocr module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text-2"><span class="toc-number">6.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf-2"><span class="toc-number">6.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr-2"><span class="toc-number">6.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml-2"><span class="toc-number">6.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data-2"><span class="toc-number">6.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd-2"><span class="toc-number">6.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs-2"><span class="toc-number">6.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages-2"><span class="toc-number">6.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -502,42 +512,12 @@ ASXE = 月落星沉</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/" title="GitHub页面自定义域名（参考于官方文档）">GitHub页面自定义域名（参考于官方文档）</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/python/" title="分类于 Python">Python</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
-</div>
-
-    <span><a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" title="爬取铜钟歌单音乐">爬取铜钟歌单音乐</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/python/" title="分类于 Python">Python</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
     <span><a href="/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/" title="新版有道翻译之js逆向">新版有道翻译之js逆向</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/04/21/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API/" title="随机图片API">随机图片API</a></span>
   </li>
 
       
@@ -561,6 +541,18 @@ ASXE = 月落星沉</title>
 <a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
+    <span><a href="/2023/03/08/%E5%BC%82%E6%AD%A5%E7%88%AC%E8%99%AB%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%AE%9E%E4%BE%8B/" title="异步爬虫机制与实例">异步爬虫机制与实例</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
+</div>
+
     <span><a href="/2023/03/28/%E7%88%AC%E8%99%AB%E4%B9%8Bhttpx%E5%BA%93/" title="HTTP2.0之httpx">HTTP2.0之httpx</a></span>
   </li>
 
@@ -569,9 +561,29 @@ ASXE = 月落星沉</title>
     
 <div class="breadcrumb">
 <a href="/categories/python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
-    <span><a href="/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="基于mirai和graia的QQ机器人">基于mirai和graia的QQ机器人</a></span>
+    <span><a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" title="爬取铜钟歌单音乐">爬取铜钟歌单音乐</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/" title="GitHub页面自定义域名（参考于官方文档）">GitHub页面自定义域名（参考于官方文档）</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/21/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API/" title="随机图片API">随机图片API</a></span>
   </li>
 
       
@@ -590,21 +602,19 @@ ASXE = 月落星沉</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python">Python</a>
 </div>
 
-    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="基于mirai和graia的QQ机器人">基于mirai和graia的QQ机器人</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/python/" title="分类于 Python">Python</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
-    <span><a href="/2023/03/08/%E5%BC%82%E6%AD%A5%E7%88%AC%E8%99%AB%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%AE%9E%E4%BE%8B/" title="异步爬虫机制与实例">异步爬虫机制与实例</a></span>
+    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
@@ -629,7 +639,7 @@ ASXE = 月落星沉</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">19k 字</span>
+    <span title="站点总字数">20k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
