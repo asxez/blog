@@ -93,7 +93,7 @@ ASXE = 月落星沉</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>6.3k</span>
+    <span>6.9k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -134,12 +134,12 @@ ASXE = 月落星沉</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?3800"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?500495"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?865826"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?75835"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?126170"></li>
-          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?868020"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?205684"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?109227"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?881860"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?80837"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?834482"></li>
+          <li class="item" data-background-image="https://api.asxe.vip/scenery.php?657411"></li>
         </ul>
       </div>
     </header>
@@ -215,9 +215,13 @@ ASXE = 月落星沉</title>
 <p>将图片等比例缩小或者放大</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>equal_scale_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">#最后一个参数是变化倍数</span></pre></td></tr></table></figure><h3 id="customize_image"><a class="anchor" href="#customize_image">#</a> customize_image()</h3>
 <p>自定义修改图片分辨率，若是不输入第三和四个参数，那么将会使用原参数</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="get_image_hash"><a class="anchor" href="#get_image_hash">#</a> get_image_hash()</h3>
-<p>获取图片的哈希值，返回值由 0 和 1 组成</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>get_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/.png'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images"><a class="anchor" href="#remove_same_images">#</a> remove_same_images()</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="lbp_image_hash"><a class="anchor" href="#lbp_image_hash">#</a> lbp_image_hash()</h3>
+<p>哈希局部二值算法计算图片哈希值</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>lbp_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="p_image_hash"><a class="anchor" href="#p_image_hash">#</a> p_image_hash()</h3>
+<p>哈希感知算法计算图片哈希值</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>p_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="average_image_hash"><a class="anchor" href="#average_image_hash">#</a> average_image_hash()</h3>
+<p>哈希平均算法计算图片哈希值</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>average_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images"><a class="anchor" href="#remove_same_images">#</a> remove_same_images()</h3>
 <p>删除某目录下相同的图片且每张图片保留一张。<br />
 具体实现：通过计算图片的哈希值，相同图片则会被删除。</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>remove_same_images<span class="token punctuation">(</span><span class="token string">'F:/image'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr模块"><a class="anchor" href="#aocr模块">#</a> Aocr 模块</h2>
@@ -239,7 +243,7 @@ ASXE = 月落星沉</title>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Aocr</pre></td></tr><tr><td data-num="2"></td><td><pre>boxs <span class="token operator">=</span> Aocr<span class="token punctuation">.</span>get_image_boxs<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="check_languages"><a class="anchor" href="#check_languages">#</a> check_languages()</h3>
 <p>获取已安装的语言包</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Aocr</pre></td></tr><tr><td data-num="2"></td><td><pre>lang <span class="token operator">=</span> Aocr<span class="token punctuation">.</span>check_languages<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span>lang<span class="token punctuation">)</span></pre></td></tr></table></figure></div>
-<div class="tab" data-id="id1" data-title="英文文档">
+<div class="tab" data-id="id1" data-title="English Docs">
 <h1 id="welcome-to-you"><a class="anchor" href="#welcome-to-you">#</a> Welcome to you !</h1>
 <p>If you see it, there are two possibilities, either for ImageMagic or just hanging out, but you're welcome here!</p>
 <h1 id="where-to-get-it"><a class="anchor" href="#where-to-get-it">#</a> Where to get it ?</h1>
@@ -266,9 +270,13 @@ ASXE = 月落星沉</title>
 <p>Reduce or enlarge the image at equal scale.</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>equal_scale_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">#The last parameter is the multiplier.</span></pre></td></tr></table></figure><h3 id="customize_image-2"><a class="anchor" href="#customize_image-2">#</a> customize_image()</h3>
 <p>Customize the image resolution, if you do not enter the third and fourth parameters, the original parameters will be used.</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="get_image_hash-2"><a class="anchor" href="#get_image_hash-2">#</a> get_image_hash()</h3>
-<p>Get the hash value of the image, and the return value consists of 0 and 1.</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>get_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/.png'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images-2"><a class="anchor" href="#remove_same_images-2">#</a> remove_same_images()</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>customize_image<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">,</span><span class="token string">'F:/image/save.png'</span><span class="token punctuation">,</span><span class="token number">1960</span><span class="token punctuation">,</span><span class="token number">1080</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="lbp_image_hash-2"><a class="anchor" href="#lbp_image_hash-2">#</a> lbp_image_hash()</h3>
+<p>The hash local binary algorithm calculates the image hash value.</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>lbp_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="p_image_hash-2"><a class="anchor" href="#p_image_hash-2">#</a> p_image_hash()</h3>
+<p>The hash awareness algorithm calculates the image hash value.</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>p_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="average_image_hash-2"><a class="anchor" href="#average_image_hash-2">#</a> average_image_hash()</h3>
+<p>The hash averaging algorithm calculates the image hash value.</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin">hash</span> <span class="token operator">=</span> Image<span class="token punctuation">.</span>average_image_hash<span class="token punctuation">(</span><span class="token string">'F:/image/test.png'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">hash</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="remove_same_images-2"><a class="anchor" href="#remove_same_images-2">#</a> remove_same_images()</h3>
 <p>Delete the same images in a directory and keep one image per image.<br />
 Implementation: By calculating the hash value of the image, the same image will be deleted.</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> ImageMagic <span class="token keyword">import</span> Image</pre></td></tr><tr><td data-num="2"></td><td><pre>Image<span class="token punctuation">.</span>remove_same_images<span class="token punctuation">(</span><span class="token string">'F:/image'</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="aocr-module"><a class="anchor" href="#aocr-module">#</a> Aocr module</h2>
@@ -305,7 +313,7 @@ Implementation: By calculating the hash value of the image, the same image will 
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-05-07 09:56:38" itemprop="dateModified" datetime="2023-05-07T09:56:38+08:00">2023-05-07</time>
+    <time title="修改时间：2023-05-07 13:43:38" itemprop="dateModified" datetime="2023-05-07T13:43:38+08:00">2023-05-07</time>
   </span>
   <span id="2023/05/05/ImageMagic的API文档(中英文版)/" class="item leancloud_visitors" data-flag-title="ImageMagic库API文档(中英文版)" title="阅读次数">
       <span class="icon">
@@ -368,7 +376,7 @@ Implementation: By calculating the hash value of the image, the same image will 
     <div class="item left">
       
 
-  <a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.asxe.vip&#x2F;scenery.php?354926" title="爬取铜钟歌单音乐">
+  <a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;api.asxe.vip&#x2F;scenery.php?856538" title="爬取铜钟歌单音乐">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 爬虫</span>
   <h3>爬取铜钟歌单音乐</h3>
@@ -392,7 +400,7 @@ Implementation: By calculating the hash value of the image, the same image will 
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E"><span class="toc-number">1.</span> <span class="toc-text"> 欢迎！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96imagemagic"><span class="toc-number">2.</span> <span class="toc-text"> 获取 ImageMagic</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs"><span class="toc-number">3.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image%E6%A8%A1%E5%9D%97"><span class="toc-number">3.1.</span> <span class="toc-text"> Image 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image"><span class="toc-number">3.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word"><span class="toc-number">3.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image"><span class="toc-number">3.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image"><span class="toc-number">3.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert"><span class="toc-number">3.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image"><span class="toc-number">3.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image"><span class="toc-number">3.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_hash"><span class="toc-number">3.1.8.</span> <span class="toc-text"> get_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images"><span class="toc-number">3.1.9.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr%E6%A8%A1%E5%9D%97"><span class="toc-number">3.2.</span> <span class="toc-text"> Aocr 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text"><span class="toc-number">3.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf"><span class="toc-number">3.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr"><span class="toc-number">3.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml"><span class="toc-number">3.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data"><span class="toc-number">3.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd"><span class="toc-number">3.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs"><span class="toc-number">3.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages"><span class="toc-number">3.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#welcome-to-you"><span class="toc-number">4.</span> <span class="toc-text"> Welcome to you !</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#where-to-get-it"><span class="toc-number">5.</span> <span class="toc-text"> Where to get it ?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs-2"><span class="toc-number">6.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image-module"><span class="toc-number">6.1.</span> <span class="toc-text"> Image module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image-2"><span class="toc-number">6.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word-2"><span class="toc-number">6.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image-2"><span class="toc-number">6.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image-2"><span class="toc-number">6.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert-2"><span class="toc-number">6.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image-2"><span class="toc-number">6.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image-2"><span class="toc-number">6.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_hash-2"><span class="toc-number">6.1.8.</span> <span class="toc-text"> get_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images-2"><span class="toc-number">6.1.9.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr-module"><span class="toc-number">6.2.</span> <span class="toc-text"> Aocr module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text-2"><span class="toc-number">6.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf-2"><span class="toc-number">6.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr-2"><span class="toc-number">6.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml-2"><span class="toc-number">6.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data-2"><span class="toc-number">6.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd-2"><span class="toc-number">6.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs-2"><span class="toc-number">6.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages-2"><span class="toc-number">6.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E"><span class="toc-number">1.</span> <span class="toc-text"> 欢迎！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96imagemagic"><span class="toc-number">2.</span> <span class="toc-text"> 获取 ImageMagic</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs"><span class="toc-number">3.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image%E6%A8%A1%E5%9D%97"><span class="toc-number">3.1.</span> <span class="toc-text"> Image 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image"><span class="toc-number">3.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word"><span class="toc-number">3.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image"><span class="toc-number">3.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image"><span class="toc-number">3.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert"><span class="toc-number">3.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image"><span class="toc-number">3.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image"><span class="toc-number">3.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lbp_image_hash"><span class="toc-number">3.1.8.</span> <span class="toc-text"> lbp_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p_image_hash"><span class="toc-number">3.1.9.</span> <span class="toc-text"> p_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#average_image_hash"><span class="toc-number">3.1.10.</span> <span class="toc-text"> average_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images"><span class="toc-number">3.1.11.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr%E6%A8%A1%E5%9D%97"><span class="toc-number">3.2.</span> <span class="toc-text"> Aocr 模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text"><span class="toc-number">3.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf"><span class="toc-number">3.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr"><span class="toc-number">3.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml"><span class="toc-number">3.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data"><span class="toc-number">3.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd"><span class="toc-number">3.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs"><span class="toc-number">3.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages"><span class="toc-number">3.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#welcome-to-you"><span class="toc-number">4.</span> <span class="toc-text"> Welcome to you !</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#where-to-get-it"><span class="toc-number">5.</span> <span class="toc-text"> Where to get it ?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docs-2"><span class="toc-number">6.</span> <span class="toc-text"> DOCS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#image-module"><span class="toc-number">6.1.</span> <span class="toc-text"> Image module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#word_to_image-2"><span class="toc-number">6.1.1.</span> <span class="toc-text"> word_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#voice_to_word-2"><span class="toc-number">6.1.2.</span> <span class="toc-text"> voice_to_word()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#audio_to_image-2"><span class="toc-number">6.1.3.</span> <span class="toc-text"> audio_to_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#categorize_image-2"><span class="toc-number">6.1.4.</span> <span class="toc-text"> categorize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#convert-2"><span class="toc-number">6.1.5.</span> <span class="toc-text"> convert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#equal_scale_image-2"><span class="toc-number">6.1.6.</span> <span class="toc-text"> equal_scale_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#customize_image-2"><span class="toc-number">6.1.7.</span> <span class="toc-text"> customize_image()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lbp_image_hash-2"><span class="toc-number">6.1.8.</span> <span class="toc-text"> lbp_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#p_image_hash-2"><span class="toc-number">6.1.9.</span> <span class="toc-text"> p_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#average_image_hash-2"><span class="toc-number">6.1.10.</span> <span class="toc-text"> average_image_hash()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#remove_same_images-2"><span class="toc-number">6.1.11.</span> <span class="toc-text"> remove_same_images()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aocr-module"><span class="toc-number">6.2.</span> <span class="toc-text"> Aocr module</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_text-2"><span class="toc-number">6.2.1.</span> <span class="toc-text"> image_to_text()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_pdf-2"><span class="toc-number">6.2.2.</span> <span class="toc-text"> image_to_pdf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_hocr-2"><span class="toc-number">6.2.3.</span> <span class="toc-text"> image_to_hocr()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_to_altoxml-2"><span class="toc-number">6.2.4.</span> <span class="toc-text"> image_to_AltoXml()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_data-2"><span class="toc-number">6.2.5.</span> <span class="toc-text"> get_image_data()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_osd-2"><span class="toc-number">6.2.6.</span> <span class="toc-text"> get_image_osd()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_image_boxs-2"><span class="toc-number">6.2.7.</span> <span class="toc-text"> get_image_boxs()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#check_languages-2"><span class="toc-number">6.2.8.</span> <span class="toc-text"> check_languages()</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -517,7 +525,31 @@ Implementation: By calculating the hash value of the image, the same image will 
 <a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
-    <span><a href="/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/" title="新版有道翻译之js逆向">新版有道翻译之js逆向</a></span>
+    <span><a href="/2023/03/28/%E7%88%AC%E8%99%AB%E4%B9%8Bhttpx%E5%BA%93/" title="HTTP2.0之httpx">HTTP2.0之httpx</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
+</div>
+
+    <span><a href="/2023/03/08/%E5%BC%82%E6%AD%A5%E7%88%AC%E8%99%AB%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%AE%9E%E4%BE%8B/" title="异步爬虫机制与实例">异步爬虫机制与实例</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/python/imagemagic/" title="分类于 ImageMagic">ImageMagic</a>
+</div>
+
+    <span><a href="/2023/05/05/ImageMagic%E7%9A%84API%E6%96%87%E6%A1%A3(%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88)/" title="ImageMagic库API文档(中英文版)">ImageMagic库API文档(中英文版)</a></span>
   </li>
 
       
@@ -541,30 +573,6 @@ Implementation: By calculating the hash value of the image, the same image will 
 <a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
-    <span><a href="/2023/03/08/%E5%BC%82%E6%AD%A5%E7%88%AC%E8%99%AB%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%AE%9E%E4%BE%8B/" title="异步爬虫机制与实例">异步爬虫机制与实例</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/python/" title="分类于 Python">Python</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
-</div>
-
-    <span><a href="/2023/03/28/%E7%88%AC%E8%99%AB%E4%B9%8Bhttpx%E5%BA%93/" title="HTTP2.0之httpx">HTTP2.0之httpx</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/python/" title="分类于 Python">Python</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
-</div>
-
     <span><a href="/2023/05/01/%E7%88%AC%E5%8F%96%E9%93%9C%E9%92%9F%E6%AD%8C%E5%8D%95%E9%9F%B3%E4%B9%90/" title="爬取铜钟歌单音乐">爬取铜钟歌单音乐</a></span>
   </li>
 
@@ -572,9 +580,12 @@ Implementation: By calculating the hash value of the image, the same image will 
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/python/spider/" title="分类于 爬虫">爬虫</a>
 </div>
 
-    <span><a href="/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/" title="GitHub页面自定义域名（参考于官方文档）">GitHub页面自定义域名（参考于官方文档）</a></span>
+    <span><a href="/2023/03/12/%E6%96%B0%E7%89%88%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E4%B9%8Bjs%E9%80%86%E5%90%91/" title="新版有道翻译之js逆向">新版有道翻译之js逆向</a></span>
   </li>
 
       
@@ -590,12 +601,9 @@ Implementation: By calculating the hash value of the image, the same image will 
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/python/" title="分类于 Python">Python</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/python/imagemagic/" title="分类于 ImageMagic">ImageMagic</a>
 </div>
 
-    <span><a href="/2023/05/05/ImageMagic%E7%9A%84API%E6%96%87%E6%A1%A3(%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88)/" title="ImageMagic库API文档(中英文版)">ImageMagic库API文档(中英文版)</a></span>
+    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -614,7 +622,7 @@ Implementation: By calculating the hash value of the image, the same image will 
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/03/05/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2023/04/22/GitHub%E9%A1%B5%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%82%E8%80%83%E4%BA%8E%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89/" title="GitHub页面自定义域名（参考于官方文档）">GitHub页面自定义域名（参考于官方文档）</a></span>
   </li>
 
   </ul>
@@ -639,13 +647,13 @@ Implementation: By calculating the hash value of the image, the same image will 
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">20k 字</span>
+    <span title="站点总字数">21k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">18 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
