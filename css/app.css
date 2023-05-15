@@ -3130,24 +3130,13 @@ main >.inner {
   top: 0.8rem;
   box-shadow: 0 0 0.6rem 0.6rem var(--color-pink-a3);
   background-color: var(--color-pink-a3);
+  z-index: -1;
 }
 .index.wrap .btn:hover {
   transform: translateZ(2.5rem);
 }
 .index.wrap .btn:hover::before {
   transform: translateZ(-2.5rem);
-}
-.index.wrap .active .btn {
-  transform-style: preserve-3d;
-  transform: translateZ(2rem);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-.index.wrap .active .btn::before {
-  transform-style: preserve-3d;
-  transform: translateZ(-2rem);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 .index.wrap .meta {
   font-size: 0.8125em;
@@ -3318,8 +3307,26 @@ main >.inner {
 .segments > .item:hover {
   box-shadow: 0 0 2rem var(--box-bg-shadow);
 }
+.segments > .item:hover .cover {
+  filter: brightness(0.3);
+}
 .segments > .item:hover .cover img {
-  transform: scale(1.05) rotate(1deg);
+  transform: scale(1.25) rotate(2deg);
+}
+.segments > .item:hover .info {
+  width: 75%;
+}
+@media (max-width: 767px) {
+  .segments > .item:hover .info {
+    width: 100%;
+  }
+}
+.segments > .item:hover .info h3 {
+  margin: 0.625rem 0;
+  color: var(--color-blue);
+}
+.segments > .item:hover .excerpt {
+  opacity: 1;
 }
 .segments .cover {
   width: 50%;
@@ -3328,6 +3335,7 @@ main >.inner {
           clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
   border-radius: 0.625rem 0 0 0.625rem;
   overflow: hidden;
+  transition: all 0.2s ease-in-out 0s;
 }
 @media (max-width: 767px) {
   .segments .cover {
@@ -3344,13 +3352,13 @@ main >.inner {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: all 0.2s ease-in-out 0s;
 }
 .segments .info {
   position: relative;
   width: 50%;
   padding: 1rem 1.5rem 3rem 0;
   perspective: 62.5rem;
+  transition: all 0.2s ease-in-out 0s;
 }
 @media (max-width: 767px) {
   .segments .info {
@@ -3373,7 +3381,7 @@ main >.inner {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0.625rem 0;
+  margin: 3.525rem 0 0 0;
   color: var(--primary-color);
 }
 .segments .info .excerpt {
@@ -3384,6 +3392,9 @@ main >.inner {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out 0s;
 }
 .segments > .item:nth-child(even) {
   flex-direction: row-reverse;
@@ -3431,7 +3442,7 @@ main >.inner {
   justify-content: flex-start;
 }
 .segments > .item:nth-child(even):hover .cover img {
-  transform: scale(1.05) rotate(-1deg);
+  transform: scale(1.25) rotate(-2deg);
 }
 .collapse small {
   color: var(--grey-4);
