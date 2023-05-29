@@ -128,7 +128,14 @@
 
   
   <url>
-    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <loc>https://www.asxe.vip/tags/API%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/tags/ImageMagic/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -136,6 +143,13 @@
   
   <url>
     <loc>https://www.asxe.vip/tags/python/</loc>
+    <lastmod>2023-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -156,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -164,20 +178,6 @@
   
   <url>
     <loc>https://www.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/API%E6%96%87%E6%A1%A3/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/ImageMagic/</loc>
     <lastmod>2023-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
