@@ -137,6 +137,20 @@
 
   
   <url>
+    <loc>https://www.asxe.vip/tags/GitHub/</loc>
+    <lastmod>2023-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/tags/%E9%81%BF%E5%9D%91/</loc>
+    <lastmod>2023-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.asxe.vip/tags/API%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2023-06-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -151,14 +165,7 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/tags/GitHub/</loc>
-    <lastmod>2023-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/%E9%81%BF%E5%9D%91/</loc>
+    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2023-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -180,13 +187,6 @@
   
   <url>
     <loc>https://www.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
-    <lastmod>2023-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2023-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -223,14 +223,14 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/categories/python/imagemagic/</loc>
+    <loc>https://www.asxe.vip/categories/python/spider/</loc>
     <lastmod>2023-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/categories/python/spider/</loc>
+    <loc>https://www.asxe.vip/categories/python/imagemagic/</loc>
     <lastmod>2023-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

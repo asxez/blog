@@ -3901,8 +3901,8 @@ Implementation: By calculating the hash value of the image, the same image will 
             <title>基于mirai和graia的QQ机器人</title>
             <link>https://www.asxe.vip/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
             <category term="Python" scheme="https://www.asxe.vip/categories/python/" />
-            <category term="python" scheme="https://www.asxe.vip/tags/python/" />
             <category term="QQ机器人" scheme="https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" />
+            <category term="python" scheme="https://www.asxe.vip/tags/python/" />
             <pubDate>Wed, 12 Apr 2023 17:24:42 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;开始&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开始&#34;&gt;#&lt;/a&gt; 开始&lt;/h2&gt;
 &lt;p&gt;本文所用代码已发布到 GitHub，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L0dhbGF4eS1SaXZlci1Cb3Q=&#34;&gt;地址&lt;/span&gt;&lt;br /&gt;
