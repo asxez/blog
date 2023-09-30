@@ -8,7 +8,35 @@
     <author>
       <name>ASXE</name>
     </author>
-    <updated>2023-07-10T07:46:33.000Z</updated>
+    <updated>2023-09-30T06:53:58.000Z</updated>
+    <entry>
+        <id>https://www.asxe.vip/2023/09/30/%E5%A4%A9%E7%9C%BC%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E-TY-Spider/</id>
+        <title>天眼搜索引擎--TY-Spider</title>
+        <link rel="alternate" href="https://www.asxe.vip/2023/09/30/%E5%A4%A9%E7%9C%BC%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E-TY-Spider/"/>
+        <content type="html">&lt;h1 id=&#34;地址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#地址&#34;&gt;#&lt;/a&gt; 地址&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L1RZLVNwaWRlcg==&#34;&gt;天眼搜索引擎&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;天眼搜索引擎&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#天眼搜索引擎&#34;&gt;#&lt;/a&gt; 天眼搜索引擎&lt;/h1&gt;
+&lt;p&gt;百度？谷歌？edge？或者是其他的？我不知道你有没有思考过一个问题，那就是这些搜 索引擎有没有欺骗你？或许你的心中应该会有答案吧。至少我认为，它们都或多或少的 隐藏了什么。&lt;/p&gt;
+&lt;p&gt;最后，我发明了它，TY Spider，相比这个名字，我更喜欢叫它天眼搜索引擎，这个名 字或许就是属于中国人的热爱吧。天眼，是啊，宇宙浩瀚无边际，自古以来我们就向往 天空…… 扯多了……&lt;/p&gt;
+&lt;p&gt;最后，咳咳，写得有点烂，前端也还没写，挺多都没实现的都直接糊弄了一下……&lt;/p&gt;
+&lt;h1 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python3.10+&lt;/li&gt;
+&lt;li&gt;mongodb 数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署&#34;&gt;#&lt;/a&gt; 部署&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;安装依赖&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pip &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; requirements.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;运行启动脚本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./run.cmd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这样你就可以试着发送一个&lt;strong&gt; post&lt;/strong&gt; 请求了，像这样 http://127.0.0.1/search?q=test 一定要是&lt;strong&gt; post&lt;/strong&gt; 请求噢！！！&lt;/p&gt;
+</content>
+        <category term="Python" scheme="https://www.asxe.vip/categories/python/" />
+        <category term="python" scheme="https://www.asxe.vip/tags/python/" />
+        <updated>2023-09-30T06:53:58.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.asxe.vip/2023/07/10/%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91sign%E5%8F%82%E6%95%B0%E9%80%BB%E8%BE%91/</id>
         <title>百度翻译sign参数逻辑</title>
@@ -3939,31 +3967,16 @@ Implementation: By calculating the hash value of the image, the same image will 
 &lt;ol&gt;
 &lt;li&gt;ChatGPT  API 版（无上下文）（需魔法） /gpt&lt;/li&gt;
 &lt;li&gt;New Bing （有上下文）（需魔法） /bing&lt;/li&gt;
-&lt;li&gt;AI 绘画 /aip&lt;/li&gt;
-&lt;li&gt;随机动漫图片&lt;/li&gt;
-&lt;li&gt;基本翻译 /tra&lt;/li&gt;
-&lt;li&gt;人工图库（我亲手挑选的）&lt;/li&gt;
 &lt;li&gt;音乐（目前支持酷我和网易云）/kw   /wyy&lt;/li&gt;
-&lt;li&gt;随机一言&lt;/li&gt;
 &lt;li&gt;群违规词检测&lt;/li&gt;
-&lt;li&gt;入群申请检测与审核 （我设的是 QQ 等级大于三颗星的才能通过，你们可以自行修改）&lt;/li&gt;
-&lt;li&gt;定时推送实况天气&lt;/li&gt;
-&lt;li&gt;定时发送笑话段子（时间设在 14：20，因为大家才睡了午觉没啥精神）&lt;/li&gt;
+&lt;li&gt;入群申请检测与审核&lt;/li&gt;
 &lt;li&gt;/kick   /ma   /uma   /mo   /umo   /tra   /shutdown&lt;/li&gt;
-&lt;li&gt;控制端后门&lt;br /&gt;
-更多功能正在开发中，欢迎大家评论区提建议哦&lt;br /&gt;
-………………&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;新增功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新增功能&#34;&gt;#&lt;/a&gt; 新增功能&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;星期四定时推送疯狂星期四文案&lt;/li&gt;
+&lt;li&gt;控制端后门&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;部分功能使用方法及解释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部分功能使用方法及解释&#34;&gt;#&lt;/a&gt; 部分功能使用方法及解释&lt;/h3&gt;
 &lt;p&gt;ChatGPT：/gpt 问题&lt;br /&gt;
  New Bing：/bing 问题&lt;br /&gt;
- ai 绘画：/aip 描述&lt;br /&gt;
 音乐：/kw 音乐名  和  /wyy 音乐名&lt;br /&gt;
-翻译：/tra en 文本 （将文本翻译为英文） 和  /tra zh 文本 （将文本翻译为中文）&lt;br /&gt;
 关机：/shutdown  （仅系统管理员可用）&lt;br /&gt;
 清除 new bing 记忆或者重启程序：/clean&lt;br /&gt;
  控制端后门：/s 文本  这段命令可以让机器人将文本发送至指定群聊，仅系统管理员可用（这段指令只能私发给机器人）&lt;br /&gt;
@@ -3980,7 +3993,6 @@ Implementation: By calculating the hash value of the image, the same image will 
  然后：&lt;br /&gt;
 &lt;img data-src=&#34;https://gitee.com/asxe/image/raw/master/blog/mirai_graia_qqbot/1.png&#34; alt=&#34;1.png&#34; /&gt;&lt;br /&gt;
  点击 Export as JSON，然后去 modules 目录下的 cookie.json 文件粘贴上就行了&lt;/p&gt;
-&lt;p&gt;若有什么不懂的，请在评论区留言！！！&lt;/p&gt;
 </content>
         <category term="Python" scheme="https://www.asxe.vip/categories/python/" />
         <category term="QQ机器人" scheme="https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" />
