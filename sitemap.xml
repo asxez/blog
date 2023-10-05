@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.asxe.vip/friends/index.html</loc>
+    
+    <lastmod>2023-10-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.asxe.vip/2023/09/30/%E5%A4%A9%E7%9C%BC%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E-TY-Spider/</loc>
     
     <lastmod>2023-10-01</lastmod>
@@ -128,15 +137,6 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/friends/index.html</loc>
-    
-    <lastmod>2023-05-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.asxe.vip/2023/04/21/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API/</loc>
     
     <lastmod>2023-04-24</lastmod>
@@ -183,6 +183,13 @@
   </url>
   
   <url>
+    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.asxe.vip/tags/python/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -198,13 +205,6 @@
   
   <url>
     <loc>https://www.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
-    <lastmod>2023-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
