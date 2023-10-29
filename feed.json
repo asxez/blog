@@ -7,6 +7,19 @@
     "home_page_url": "https://www.asxe.vip/blog",
     "items": [
         {
+            "id": "https://www.asxe.vip/blog/2023/10/29/css-Flex%E5%AE%B9%E5%99%A8%E8%AF%AD%E6%B3%95%E8%AE%B0/",
+            "url": "https://www.asxe.vip/blog/2023/10/29/css-Flex%E5%AE%B9%E5%99%A8%E8%AF%AD%E6%B3%95%E8%AE%B0/",
+            "title": "css Flex容器语法记",
+            "date_published": "2023-10-29T08:35:56.000Z",
+            "content_html": "<h2 id=\"正文\"><a class=\"anchor\" href=\"#正文\">#</a> 正文</h2>\n<p><ins>注：设为 Flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。</ins></p>\n<p>以下 6 个属性需设置在容器上：</p>\n<ul>\n<li>flex-direction</li>\n<li>flex-wrap</li>\n<li>flex-flow</li>\n<li>justify-content</li>\n<li>align-items</li>\n<li>align-content</li>\n</ul>\n<details class=\"primary\"><summary>flex-direction属性决定主轴的方向（即项目的排列方向）。</summary><div>\n<ul>\n<li>row（默认值）：主轴为水平方向，起点在左端。</li>\n<li>row-reverse：主轴为水平方向，起点在右端。</li>\n<li>column：主轴为垂直方向，起点在上沿。</li>\n<li>column-reverse：主轴为垂直方向，起点在下沿。</li>\n</ul>\n</div></details>\n<details class=\"primary\"><summary>默认情况下项目都排在一条线（轴线）上。flex-wrap属性定义若不是一条轴线，如何实现换行。</summary><div>\n<ul>\n<li>nowrap（默认）：不换行。</li>\n<li>wrap：换行，第一行在上方。</li>\n<li>wrap-reverse：换行，第一行在下方。</li>\n</ul>\n</div></details>\n<p><ins>flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap。</ins></p>\n<details class=\"primary\"><summary>justify-content属性定义了项目在主轴上的对齐方式。</summary><div>\n<ul>\n<li>flex-start（默认值）：左对齐</li>\n<li>flex-end：右对齐</li>\n<li>center： 居中</li>\n<li>space-between：两端对齐，项目之间的间隔都相等。</li>\n<li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</li>\n</ul>\n</div></details>\n<details class=\"primary\"><summary>align-items属性定义项目在交叉轴上如何对齐。</summary><div>\n<ul>\n<li>flex-start：交叉轴的起点对齐。</li>\n<li>flex-end：交叉轴的终点对齐。</li>\n<li>center：交叉轴的中点对齐。</li>\n<li>baseline: 项目的第一行文字的基线对齐。</li>\n<li>stretch（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度。</li>\n</ul>\n</div></details>\n<details class=\"primary\"><summary>align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</summary><div>\n<ul>\n<li>flex-start：与交叉轴的起点对齐。</li>\n<li>flex-end：与交叉轴的终点对齐。</li>\n<li>center：与交叉轴的中点对齐。</li>\n<li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>\n<li>space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>\n<li>stretch（默认值）：轴线占满整个交叉轴。</li>\n</ul>\n</div></details>\n<p>以下 6 个属性设置在项目上。</p>\n<ul>\n<li>order</li>\n<li>flex-grow</li>\n<li>flex-shrink</li>\n<li>flex-basis</li>\n<li>flex</li>\n<li>align-self</li>\n</ul>\n<ol>\n<li>\n<p>order 属性定义项目的排列顺序。数值越小，排列越靠前，默认为 0。</p>\n</li>\n<li>\n<p>flex-grow 属性定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。<br />\n如果所有项目的 flex-grow 属性都为 1，则它们将等分剩余空间（如果有的话）。如果一个项目的 flex-grow 属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍。</p>\n</li>\n<li>\n<p>flex-shrink 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。<br />\n如果所有项目的 flex-shrink 属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的 flex-shrink 属性为 0，其他项目都为 1，则空间不足时，前者不缩小。<br />\n负值对该属性无效。</p>\n</li>\n<li>\n<p>flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。<br />\n它可以设为跟 width 或 height 属性一样的值（比如 350px），则项目将占据固定空间。</p>\n</li>\n<li>\n<p>flex 属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。<br />\n该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。<br />\n建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</p>\n</li>\n<li>\n<p>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。</p>\n</li>\n</ol>\n",
+            "tags": [
+                "Web",
+                "web",
+                "css",
+                "flex"
+            ]
+        },
+        {
             "id": "https://www.asxe.vip/blog/2023/09/30/%E5%A4%A9%E7%9C%BC%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E-TY-Spider/",
             "url": "https://www.asxe.vip/blog/2023/09/30/%E5%A4%A9%E7%9C%BC%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E-TY-Spider/",
             "title": "天眼搜索引擎--TY-Spider",
@@ -115,8 +128,8 @@
             "content_html": "<p><img data-src=\"https://moe-counter.glitch.me/get/@asxe?theme=gelbooru\" alt=\"asxe\" /></p>\n<h2 id=\"开始\"><a class=\"anchor\" href=\"#开始\">#</a> 开始</h2>\n<p>本文所用代码已发布到 GitHub，<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L0dhbGF4eS1SaXZlci1Cb3Q=\">地址</span><br />\n mirai 下载最新版本即可<br />\n<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL21hbW9lL21pcmFpL3JlbGVhc2Vz\"> mirai</span></p>\n<h2 id=\"功能\"><a class=\"anchor\" href=\"#功能\">#</a> 功能</h2>\n<ol>\n<li>ChatGPT  API 版（无上下文）（需魔法） /gpt</li>\n<li>New Bing （有上下文）（需魔法） /bing</li>\n<li>音乐（目前支持酷我和网易云）/kw   /wyy</li>\n<li>群违规词检测</li>\n<li>入群申请检测与审核</li>\n<li>/kick   /ma   /uma   /mo   /umo   /tra   /shutdown</li>\n<li>控制端后门</li>\n</ol>\n<h3 id=\"部分功能使用方法及解释\"><a class=\"anchor\" href=\"#部分功能使用方法及解释\">#</a> 部分功能使用方法及解释</h3>\n<p>ChatGPT：/gpt 问题<br />\n New Bing：/bing 问题<br />\n音乐：/kw 音乐名  和  /wyy 音乐名<br />\n关机：/shutdown  （仅系统管理员可用）<br />\n清除 new bing 记忆或者重启程序：/clean<br />\n 控制端后门：/s 文本  这段命令可以让机器人将文本发送至指定群聊，仅系统管理员可用（这段指令只能私发给机器人）<br />\n/kick @xxx  踢出某人（注意指令和艾特间的空格）<br />\n/ma 开启全体禁言<br />\n /uma 关闭全体禁言<br />\n /mo @xxx 时间 （禁言某成员，时间单位为分钟）<br />\n/umo @xxx 解除某成员禁言</p>\n<h2 id=\"注意\"><a class=\"anchor\" href=\"#注意\">#</a> 注意！！</h2>\n<p>1.ChatGPT 需要你有一个<span class=\"label info\"> api key</span><br />\n2.New Bing 需要你有一个<span class=\"label info\">通过候补名单的账号</span><br />\n 3.New Bing cookie 获取方法如下：<br />\n首先去<span class=\"exturl\" data-url=\"aHR0cHM6Ly9taWNyb3NvZnRlZGdlLm1pY3Jvc29mdC5jb20vYWRkb25zL2RldGFpbC9jb29raWVlZGl0b3IvbmVhcGxtZmtnaGFnZWJva2tocGpwb2ViaGRsZWRsZmk=\">点这！</span>下载好 cookie editor<br />\n 然后：<br />\n<img data-src=\"https://gitee.com/asxe/image/raw/master/blog/mirai_graia_qqbot/1.png\" alt=\"1.png\" /><br />\n 点击 Export as JSON，然后去 modules 目录下的 cookie.json 文件粘贴上就行了</p>\n",
             "tags": [
                 "Python",
-                "QQ机器人",
-                "python"
+                "python",
+                "QQ机器人"
             ]
         },
         {
