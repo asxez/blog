@@ -8,7 +8,25 @@
     <author>
       <name>ASXE</name>
     </author>
-    <updated>2023-10-29T08:35:56.000Z</updated>
+    <updated>2023-11-16T10:13:42.000Z</updated>
+    <entry>
+        <id>https://www.asxe.vip/blog/2023/11/16/%E4%BB%BF%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E4%B8%BB%E9%A1%B5/</id>
+        <title>仿华为商城主页</title>
+        <link rel="alternate" href="https://www.asxe.vip/blog/2023/11/16/%E4%BB%BF%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E4%B8%BB%E9%A1%B5/"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://moe-counter.glitch.me/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://counter.likepoems.com/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;项目地址&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#项目地址&#34;&gt;#&lt;/a&gt; 项目地址&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L0h1YXdlaS1Ib21lcGFnZS1JbWl0YXRpb24=&#34;&gt;Huawei-Homepage-Imitation&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L0h1YXdlaS1Ib21lcGFnZS1JbWl0YXRpb24=&#34;&gt;https://github.com/asxez/Huawei-Homepage-Imitation&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;为什么写这个项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么写这个项目&#34;&gt;#&lt;/a&gt; 为什么写这个项目？&lt;/h1&gt;
+&lt;p&gt;这个项目是我的&lt;ins&gt; web 前端开发&lt;/ins&gt;课程大作业&lt;/p&gt;
+&lt;h1 id=&#34;声明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#声明&#34;&gt;#&lt;/a&gt; 声明&lt;/h1&gt;
+&lt;p&gt;本项目仅用于交流与学习，勿作其他任何形式用途&lt;/p&gt;
+</content>
+        <category term="Web" scheme="https://www.asxe.vip/blog/categories/web/" />
+        <category term="web" scheme="https://www.asxe.vip/blog/tags/web/" />
+        <updated>2023-11-16T10:13:42.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.asxe.vip/blog/2023/10/29/css-Flex%E5%AE%B9%E5%99%A8%E8%AF%AD%E6%B3%95%E8%AE%B0/</id>
         <title>css Flex容器语法记</title>
