@@ -7,6 +7,17 @@
     "home_page_url": "https://www.asxe.vip/blog",
     "items": [
         {
+            "id": "https://www.asxe.vip/blog/2023/12/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8libeasyhttp%EF%BC%9F%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%95%99%E4%BC%9A%E4%BD%A0/",
+            "url": "https://www.asxe.vip/blog/2023/12/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8libeasyhttp%EF%BC%9F%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%95%99%E4%BC%9A%E4%BD%A0/",
+            "title": "如何使用libeasyhttp？一篇文章教会你",
+            "date_published": "2023-12-28T11:14:05.000Z",
+            "content_html": "<p><img data-src=\"https://moe-counter.glitch.me/get/@asxe?theme=gelbooru\" alt=\"asxe\" /><br />\n<img data-src=\"https://counter.likepoems.com/get/@asxe?theme=gelbooru\" alt=\"asxe\" /></p>\n<p>&lt;br&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;<br />\n&lt;h1&gt; 正文 &lt;/h1&gt;<br />\n&lt;/div&gt;</p>\n<p>&lt;br&gt;</p>\n<h2 id=\"获取源文件\"><a class=\"anchor\" href=\"#获取源文件\">#</a> 获取源文件</h2>\n<p>点击<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L2xpYmVhc3lodHRw\"> libeasyhttp</span> 下载</p>\n<h2 id=\"使用方法\"><a class=\"anchor\" href=\"#使用方法\">#</a> 使用方法</h2>\n<p>请求所返回类型均为 HTTP_RESPONSE 结构。其定义如下 &lt;br&gt;</p>\n<pre><code class=\"language-C\">typedef struct HTTP_RESPONSE &#123;\nlong status; //请求状态码\nchar *text; //文本\ndouble total_time; //请求耗时\n&#125; HTTP_RESPONSE;\n</code></pre>\n<ol>\n<li>发送 get 请求，原型为:&lt;br&gt;HTTP_RESPONSE get (const char *url, HEADERS *headers);</li>\n</ol>\n<pre><code class=\"language-C\">#include &quot;libeasyhttp/easy-http.h&quot;\n\nint main(void) &#123;\n    HEADERS *headerList = NULL;\n    \n    headerList = addHeader(headerList, &quot;Content-Type&quot;, &quot;text/html; charset=utf-8&quot;);\n    headerList = addHeader(headerList, &quot;User-Agent&quot;, &quot;ASXE&quot;);\n    \n    HTTP_RESPONSE httpResponse = get(&quot;https://www.asxe.vip/&quot;, headerList);\n    printf(&quot;%s&quot;, httpResponse.text);\n    printf(&quot;%ld&quot;, httpResponse.status);\n    printf(&quot;%f&quot;, httpResponse.total_time);\n    return 0;\n&#125;\n</code></pre>\n<ol start=\"2\">\n<li>发送 post 请求，原型为 &lt;br&gt;HTTP_RESPONSE post (const char *url, HEADERS *headers, POST_DATA *postData);</li>\n</ol>\n<pre><code class=\"language-C\">#include &quot;libeasyhttp/easy-http.h&quot;\n\nint main(void) &#123;\n    HEADERS *headerList = NULL;\n    POST_DATA *postData = NULL;\n    \n    headerList = addHeader(headerList, &quot;User-Agent&quot;, &quot;ASXE&quot;);\n    \n    postData = addData(postData, &quot;q&quot;, &quot;测试&quot;);\n    \n    HTTP_RESPONSE httpResponse = post(&quot;http://127.0.0.1:1314/search/&quot;, headerList, postData);\n    printf(&quot;%s&quot;, httpResponse.text);\n    printf(&quot;%ld&quot;, httpResponse.status);\n    printf(&quot;%f&quot;, httpResponse.total_time);\n    return 0;\n&#125;\n</code></pre>\n",
+            "tags": [
+                "C/C++",
+                "libeasyhttp"
+            ]
+        },
+        {
             "id": "https://www.asxe.vip/blog/2023/11/16/%E4%BB%BF%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E4%B8%BB%E9%A1%B5/",
             "url": "https://www.asxe.vip/blog/2023/11/16/%E4%BB%BF%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E%E4%B8%BB%E9%A1%B5/",
             "title": "仿华为商城主页",
