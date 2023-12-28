@@ -21,16 +21,11 @@
             <pubDate>Thu, 28 Dec 2023 19:14:05 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://moe-counter.glitch.me/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;https://counter.likepoems.com/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lt;br&amp;gt;&lt;/p&gt;
-&lt;p&gt;&amp;lt;div align=&amp;quot;center&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;lt;h1&amp;gt; 正文 &amp;lt;/h1&amp;gt;&lt;br /&gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
-&lt;p&gt;&amp;lt;br&amp;gt;&lt;/p&gt;
 &lt;h2 id=&#34;获取源文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取源文件&#34;&gt;#&lt;/a&gt; 获取源文件&lt;/h2&gt;
 &lt;p&gt;点击&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FzeGV6L2xpYmVhc3lodHRw&#34;&gt; libeasyhttp&lt;/span&gt; 下载&lt;/p&gt;
 &lt;h2 id=&#34;使用方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用方法&#34;&gt;#&lt;/a&gt; 使用方法&lt;/h2&gt;
 &lt;p&gt;请求所返回类型均为 HTTP_RESPONSE 结构。其定义如下 &amp;lt;br&amp;gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;typedef struct HTTP_RESPONSE &amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-C++&#34;&gt;typedef struct HTTP_RESPONSE &amp;#123;
 long status; //请求状态码
 char *text; //文本
 double total_time; //请求耗时
@@ -39,7 +34,7 @@ double total_time; //请求耗时
 &lt;ol&gt;
 &lt;li&gt;发送 get 请求，原型为:&amp;lt;br&amp;gt;HTTP_RESPONSE get (const char *url, HEADERS *headers);&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;libeasyhttp/easy-http.h&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-C++&#34;&gt;#include &amp;quot;libeasyhttp/easy-http.h&amp;quot;
 
 int main(void) &amp;#123;
     HEADERS *headerList = NULL;
@@ -57,7 +52,7 @@ int main(void) &amp;#123;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;发送 post 请求，原型为 &amp;lt;br&amp;gt;HTTP_RESPONSE post (const char *url, HEADERS *headers, POST_DATA *postData);&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;#include &amp;quot;libeasyhttp/easy-http.h&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-C++&#34;&gt;#include &amp;quot;libeasyhttp/easy-http.h&amp;quot;
 
 int main(void) &amp;#123;
     HEADERS *headerList = NULL;
@@ -4178,8 +4173,8 @@ Implementation: By calculating the hash value of the image, the same image will 
             <title>基于mirai和graia的QQ机器人</title>
             <link>https://www.asxe.vip/blog/2023/04/12/%E5%9F%BA%E4%BA%8Emirai%E5%92%8Cgraia%E7%9A%84QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
             <category term="Python" scheme="https://www.asxe.vip/blog/categories/python/" />
-            <category term="QQ机器人" scheme="https://www.asxe.vip/blog/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" />
             <category term="python" scheme="https://www.asxe.vip/blog/tags/python/" />
+            <category term="QQ机器人" scheme="https://www.asxe.vip/blog/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" />
             <pubDate>Wed, 12 Apr 2023 17:24:42 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://moe-counter.glitch.me/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;br /&gt;
 &lt;img data-src=&#34;https://counter.likepoems.com/get/@asxe?theme=gelbooru&#34; alt=&#34;asxe&#34; /&gt;&lt;/p&gt;
