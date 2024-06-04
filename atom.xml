@@ -8,7 +8,79 @@
     <author>
       <name>ASXE</name>
     </author>
-    <updated>2023-12-28T11:14:05.000Z</updated>
+    <updated>2024-06-04T14:04:54.000Z</updated>
+    <entry>
+        <id>https://www.asxe.vip/blog/2024/06/04/matplotlib%E8%AE%B0%E5%BD%95/</id>
+        <title>matplotlib记录</title>
+        <link rel="alternate" href="https://www.asxe.vip/blog/2024/06/04/matplotlib%E8%AE%B0%E5%BD%95/"/>
+        <content type="html">&lt;h2 id=&#34;pltgca&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pltgca&#34;&gt;#&lt;/a&gt; plt.gca()&lt;/h2&gt;
+&lt;p&gt;plt.gca () 函数，可用于获取当前图形的坐标轴（Axes）对象。可以对此对象进行更改或添加其他元素，例如标题、标签、网格等。&lt;br /&gt;
+示例代码：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; matplotlib&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyplot &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; plt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 绘制图形&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;plot&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 获取当前坐标轴对象并设置其属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ax &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;gca&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ax&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_title&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;test gca&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ax&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_xlabel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;x&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ax&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_ylabel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;y&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;axescla&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#axescla&#34;&gt;#&lt;/a&gt; Axes.cla()&lt;/h2&gt;
+&lt;p&gt;使用 * Axes.cla ()* 函数用于清除当前轴，即删除轴上的所有图形、标注等内容，使轴恢复到初始状态。这样，在绘制新的图形时，不会受到之前图形的干扰。&lt;/p&gt;
+&lt;h2 id=&#34;pltrcparams&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pltrcparams&#34;&gt;#&lt;/a&gt; plt.rcParams&lt;/h2&gt;
+&lt;p&gt;此属性可以设置图像配置参数，以下是一些常用的 plt.rcParams 属性及其作用和用法：&lt;/p&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;图形和画布&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;figure.figsize: 设置图形的宽和高。示例: plt.rcParams [&#39;figure.figsize&#39;] = [10, 5]&lt;/li&gt;
+&lt;li&gt;figure.dpi: 设置图形的分辨率。示例: plt.rcParams [&#39;figure.dpi&#39;] = 100&lt;/li&gt;
+&lt;li&gt;figure.facecolor: 设置图形的背景颜色。示例: plt.rcParams [&#39;figure.facecolor&#39;] = &#39;w&#39;&lt;/li&gt;
+&lt;li&gt;figure.edgecolor: 设置图形边框的颜色。示例: plt.rcParams [&#39;figure.edgecolor&#39;] = &#39;k&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;轴&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;axes.linewidth: 设置坐标轴的线宽。示例: plt.rcParams [&#39;axes.linewidth&#39;] = 1.5&lt;/li&gt;
+&lt;li&gt;axes.grid: 是否显示网格。示例: plt.rcParams [&#39;axes.grid&#39;] = True&lt;/li&gt;
+&lt;li&gt;axes.titlesize: 设置坐标轴标题的字体大小。示例: plt.rcParams [&#39;axes.titlesize&#39;] = &#39;large&#39;&lt;/li&gt;
+&lt;li&gt;axes.labelsize: 设置坐标轴标签的字体大小。示例: plt.rcParams [&#39;axes.labelsize&#39;] = &#39;medium&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;网格&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;grid.color: 设置网格线的颜色。示例: plt.rcParams [&#39;grid.color&#39;] = &#39;grey&#39;&lt;/li&gt;
+&lt;li&gt;grid.linestyle: 设置网格线的样式。示例: plt.rcParams [&#39;grid.linestyle&#39;] = &#39;--&#39;&lt;/li&gt;
+&lt;li&gt;grid.linewidth: 设置网格线的宽度。示例: plt.rcParams [&#39;grid.linewidth&#39;] = 0.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;线条&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;lines.linewidth: 设置线条的宽度。示例: plt.rcParams [&#39;lines.linewidth&#39;] = 2.0&lt;/li&gt;
+&lt;li&gt;lines.color: 设置线条的颜色。示例: plt.rcParams [&#39;lines.color&#39;] = &#39;blue&#39;&lt;/li&gt;
+&lt;li&gt;lines.linestyle: 设置线条的样式。示例: plt.rcParams [&#39;lines.linestyle&#39;] = &#39;-&#39;&lt;/li&gt;
+&lt;li&gt;lines.marker: 设置线条的标记。示例: plt.rcParams [&#39;lines.marker&#39;] = &#39;o&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;字体&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;font.size: 设置字体大小。示例: plt.rcParams [&#39;font.size&#39;] = 12&lt;/li&gt;
+&lt;li&gt;font.family: 设置字体系列。示例: plt.rcParams [&#39;font.family&#39;] = &#39;sans-serif&#39;&lt;/li&gt;
+&lt;li&gt;font.serif: 设置衬线字体。示例: plt.rcParams [&#39;font.serif&#39;] = [&#39;Times New Roman&#39;]&lt;/li&gt;
+&lt;li&gt;font.sans-serif: 设置无衬线字体。示例: plt.rcParams [&#39;font.sans-serif&#39;] = [&#39;Arial&#39;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;图例&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;legend.loc: 设置图例的位置。示例: plt.rcParams [&#39;legend.loc&#39;] = &#39;best&#39;&lt;/li&gt;
+&lt;li&gt;legend.fontsize: 设置图例的字体大小。示例: plt.rcParams [&#39;legend.fontsize&#39;] = &#39;large&#39;&lt;/li&gt;
+&lt;li&gt;legend.frameon: 是否绘制图例边框。示例: plt.rcParams [&#39;legend.frameon&#39;] = True&lt;/li&gt;
+&lt;li&gt;legend.numpoints: 图例中标记点的数目。示例: plt.rcParams [&#39;legend.numpoints&#39;] = 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;刻度&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;xtick.labelsize: 设置 x 轴刻度标签的字体大小。示例: plt.rcParams [&#39;xtick.labelsize&#39;] = &#39;medium&#39;&lt;/li&gt;
+&lt;li&gt;ytick.labelsize: 设置 y 轴刻度标签的字体大小。示例: plt.rcParams [&#39;ytick.labelsize&#39;] = &#39;medium&#39;&lt;/li&gt;
+&lt;li&gt;xtick.direction: 设置 x 轴刻度的方向。示例: plt.rcParams [&#39;xtick.direction&#39;] = &#39;in&#39;&lt;/li&gt;
+&lt;li&gt;ytick.direction: 设置 y 轴刻度的方向。示例: plt.rcParams [&#39;ytick.direction&#39;] = &#39;in&#39;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+</content>
+        <category term="Python" scheme="https://www.asxe.vip/blog/categories/python/" />
+        <category term="python" scheme="https://www.asxe.vip/blog/tags/python/" />
+        <category term="matplotlib" scheme="https://www.asxe.vip/blog/tags/matplotlib/" />
+        <updated>2024-06-04T14:04:54.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.asxe.vip/blog/2023/12/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8libeasyhttp%EF%BC%9F%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%95%99%E4%BC%9A%E4%BD%A0/</id>
         <title>如何使用libeasyhttp？一篇文章教会你</title>
