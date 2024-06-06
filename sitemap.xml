@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.asxe.vip/blog/2024/06/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
     
-    <lastmod>2024-06-05</lastmod>
+    <lastmod>2024-06-06</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -284,13 +284,6 @@
   </url>
   
   <url>
-    <loc>https://www.asxe.vip/blog/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2024-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.asxe.vip/blog/tags/deep-learning/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -299,6 +292,13 @@
   
   <url>
     <loc>https://www.asxe.vip/blog/tags/pytorch/</loc>
+    <lastmod>2024-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.asxe.vip/blog/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
