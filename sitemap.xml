@@ -214,14 +214,14 @@
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/tags/web/</loc>
+    <loc>https://blog.asxe.vip/tags/API%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <loc>https://blog.asxe.vip/tags/ImageMagic/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -235,14 +235,14 @@
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/tags/API%E6%96%87%E6%A1%A3/</loc>
+    <loc>https://blog.asxe.vip/tags/matplotlib/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/tags/ImageMagic/</loc>
+    <loc>https://blog.asxe.vip/tags/web/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -263,35 +263,7 @@
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/tags/matplotlib/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.asxe.vip/tags/deep-learning/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.asxe.vip/tags/pytorch/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
+    <loc>https://blog.asxe.vip/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -306,6 +278,34 @@
   
   <url>
     <loc>https://blog.asxe.vip/tags/libeasyhttp/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.asxe.vip/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.asxe.vip/tags/js%E9%80%86%E5%90%91/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.asxe.vip/tags/deep-learning/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.asxe.vip/tags/pytorch/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -335,13 +335,6 @@
 
   
   <url>
-    <loc>https://blog.asxe.vip/categories/web/</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.asxe.vip/categories/python/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -349,7 +342,7 @@
   </url>
   
   <url>
-    <loc>https://blog.asxe.vip/categories/python/spider/</loc>
+    <loc>https://blog.asxe.vip/categories/web/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -357,6 +350,13 @@
   
   <url>
     <loc>https://blog.asxe.vip/categories/python/imagemagic/</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.asxe.vip/categories/python/spider/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
